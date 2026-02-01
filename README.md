@@ -39,39 +39,6 @@ This project is suitable for mini projects, academic submissions, and frontend p
 
 ---
 
-## 📁 Project Structure
-
-SalonBook/
-│
-├── assets/
-│ ├── facial.jpg
-│ ├── haircut.jpeg
-│ ├── manicure.jpg
-│ ├── massage.jpg
-│ └── saloonbg.jpg
-│
-├── scripts/
-│ ├── booking.js
-│ ├── history.js
-│ ├── index.js
-│ ├── services.js
-│ ├── theme.js
-│ └── move_haircut.sh
-│
-├── booking.html
-├── booking.css
-├── history.html
-├── history.css
-├── index.html
-├── index.css
-├── services.html
-├── services.css
-│
-└── README.md
-
-
----
-
 ## 🧭 Pages Overview
 
 ### 🏠 Home (index.html)
