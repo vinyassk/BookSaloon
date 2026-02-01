@@ -76,4 +76,4 @@ This project is suitable for mini projects, academic submissions, and frontend p
 
 1. Download or clone the repository:
    ```bash
-   git clone https://github.com/vinyassk/SalonBook.git
+   git clone https://github.com/vinyassk/BookSaloon.git
