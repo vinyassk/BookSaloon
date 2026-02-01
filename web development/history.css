@@ -1,0 +1,82 @@
+body {
+    background-color: #f8f9fa;
+    background-image: url('./assets/saloonbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body.dark-mode {
+    color: #f9fafb;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page-enter {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+}
+
+.appointment-card {
+    background: #ffffff;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+body.dark-mode .appointment-card {
+    background: rgba(15, 23, 42, 0.95);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    color: #f9fafb;
+}
+
+body.dark-mode .appointment-card h5,
+body.dark-mode .appointment-card p {
+    color: #f9fafb;
+}
+
+.appointment-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+}
+
+.appointment-card h5 {
+    font-weight: 600;
+}
+
+.appointment-card p {
+    margin-bottom: 0.25rem;
+}
+
+.toast-modern {
+    border-radius: 0.75rem;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    padding: 0.5rem 0.75rem;
+}
+
+.toast-modern .toast-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}

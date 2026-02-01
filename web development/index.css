@@ -1,0 +1,154 @@
+body {
+    background-color: #f8f9fa;
+    background-image: url('./assets/saloonbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+}
+
+body.dark-mode {
+    color: #f9fafb;
+}
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+}
+header {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+body.dark-mode header {
+    background-color: #111827 !important;
+}
+
+.animate__animated {
+    animation-duration: 1s;
+}
+
+.animate__delay-1s {
+    animation-delay: 1s;
+}
+
+.animate__delay-2s {
+    animation-delay: 2s;
+}
+
+.hero-section {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem 1rem;
+}
+
+.features {
+    border-radius: 1rem;
+    padding: 2.5rem 1.5rem 3rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+    margin-top: 0.25rem;
+    overflow: hidden;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.features h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    margin-bottom: 1.75rem;
+}
+
+.hero-content {
+    background: transparent;
+    padding: 2rem 2.25rem;
+    animation: heroFadeIn 1s ease-out;
+}
+
+.hero-content h2,
+.hero-content p {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 1rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.hero-content .btn-primary {
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.hero-content .btn-primary:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    background-color: #0b5ed7;
+}
+
+.hero-content .btn-primary:active {
+    transform: translateY(-1px) scale(0.99);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .card {
+    background: rgba(15, 23, 42, 0.92);
+    border-color: rgba(148, 163, 184, 0.6);
+    color: #f9fafb;
+}
+
+body.dark-mode .card .card-title,
+body.dark-mode .card .card-text {
+    color: #f9fafb;
+}
+.features .row {
+    flex-wrap: nowrap;
+    animation: featuresScroll 20s linear infinite;
+}
+
+.features .col-lg-3,
+.features .col-md-6 {
+    flex: 0 0 auto;
+}
+
+.features .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.25);
+}
+
+.page-enter {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes heroFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes featuresScroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
